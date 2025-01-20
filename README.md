@@ -21,14 +21,6 @@ This script allows switching from **XFCE to GNOME** on **Kali Linux**, while **f
 
 ## 📥 Installation & Usage
 
-### 🇫🇷 Français
-```bash
-wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh
-chmod +x switch_xfce_to_gnome.sh
-sudo ./switch_xfce_to_gnome.sh
-```
-
-### 🇬🇧 English
 ```bash
 wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh
 chmod +x switch_xfce_to_gnome.sh
