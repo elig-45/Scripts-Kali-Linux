@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e0b5a50d-8082-4fbb-9045-e2707bbe4b56)
+![image](./bannière script xfce gnome.jpg)
 
 # 🚀 Switch XFCE to GNOME | Basculer XFCE vers GNOME
 
