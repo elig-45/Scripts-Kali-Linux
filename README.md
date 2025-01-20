@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/e0b5a50d-8082-4fbb-9045-e2707bbe4b56)
+
 # 🚀 Switch XFCE to GNOME | Basculer XFCE vers GNOME
 
 [![GitHub stars](https://img.shields.io/github/stars/elig-45/switch-xfce-to-gnome?style=social)](https://github.com/elig-45/switch-xfce-to-gnome/stargazers)
