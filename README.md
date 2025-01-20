@@ -1,4 +1,4 @@
-![image](./bannière script xfce gnome.jpg)
+![image](bannière script xfce gnome.jpg)
 
 # 🚀 Switch XFCE to GNOME | Basculer XFCE vers GNOME
 
