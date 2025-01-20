@@ -1,4 +1,4 @@
-![image](bannière script xfce gnome.jpg)
+![Switch XFCE to GNOME](https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/banniere_script_xfce_gnome.jpg)
 
 # 🚀 Switch XFCE to GNOME | Basculer XFCE vers GNOME
 
