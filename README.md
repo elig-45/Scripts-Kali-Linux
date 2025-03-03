@@ -13,31 +13,22 @@
 
 ### 🇫🇷 Français
 
-Ce dépôt contient plusieurs scripts utiles pour **Kali Linux**, y compris des scripts pour basculer de **XFCE à GNOME** et pour **configurer Kali Linux en français**.
+Ce dépôt contient plusieurs scripts utiles pour **Kali Linux**, y compris des scripts pour basculer de **XFCE à GNOME** et pour **configurer Kali Linux en français**. Le script principal `menu.sh` permet de choisir et d'exécuter ces scripts facilement.
 
 ### 🇬🇧 English
 
-This repository contains several useful scripts for **Kali Linux**, including scripts to switch from **XFCE to GNOME** and to **configure Kali Linux in French**.
+This repository contains several useful scripts for **Kali Linux**, including scripts to switch from **XFCE to GNOME** and to **configure Kali Linux in French**. The main script `menu.sh` allows you to choose and run these scripts easily.
 
 ---
 
 ## 📥 Installation & Usage
 
-### Switch XFCE to GNOME
+### Utilisation du menu principal
 
 ```bash
-wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh
-chmod +x switch_xfce_to_gnome.sh
-chmod +x xfce_cleaner.sh
-sudo ./switch_xfce_to_gnome.sh
-```
-
-### Configure Kali Linux in French
-
-```bash
-wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/kali_en_to_fr.sh
-chmod +x kali_en_to_fr.sh
-sudo ./kali_en_to_fr.sh
+wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/menu.sh
+chmod +x menu.sh
+sudo ./menu.sh
 ```
 
 ---
