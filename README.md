@@ -77,12 +77,7 @@ sudo update-alternatives --set x-session-manager /usr/bin/gnome-session
 sudo reboot
 ```
 
-### 🔄 🇫🇷 Restaurer XFCE  
-```bash
-sudo apt install -y kali-desktop-xfce
-```
-
-### 🔄 🇬🇧 Restore XFCE  
+### 🔄 🇫🇷 Restaurer XFCE  🇬🇧 Restore XFCE  
 ```bash
 sudo apt install -y kali-desktop-xfce
 ```
