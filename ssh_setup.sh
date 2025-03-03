@@ -16,6 +16,10 @@ fi
 
 color_echo "1;34" "\n=== Activation et configuration de SSH ===\n"
 
+# Demande à l'utilisateur de saisir le port SSH souhaité
+read -p "Entrez le port SSH souhaité (par défaut 22): " ssh_port
+ssh_port=${ssh_port:-22}
+
 # Installation de SSH si non installé
 if ! command -v sshd &> /dev/null; then
     color_echo "1;33" "Installation du serveur SSH..."
@@ -29,6 +33,7 @@ systemctl start ssh > /dev/null
 
 # Configuration sécurisée du fichier /etc/ssh/sshd_config
 color_echo "1;32" "Sécurisation de SSH..."
+sed -i 's/#Port .*/Port '"$ssh_port"'/' /etc/ssh/sshd_config
 sed -i 's/#PermitRootLogin .*/PermitRootLogin no/' /etc/ssh/sshd_config
 sed -i 's/#PasswordAuthentication .*/PasswordAuthentication no/' /etc/ssh/sshd_config
 sed -i 's/#PubkeyAuthentication .*/PubkeyAuthentication yes/' /etc/ssh/sshd_config
