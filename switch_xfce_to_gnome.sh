@@ -131,6 +131,20 @@ else
   fi
 fi
 
+# Optionnel : Exécution du script xfce_cleaner.sh pour optimiser le stockage
+if [ "$ZENITY_MODE" = "gui" ]; then
+  if zenity --question --text="Voulez-vous optimiser le stockage et nettoyer les anciennes dépendances XFCE ?" --title="Optimisation du stockage" --ok-label="Oui" --cancel-label="Non" 2>/dev/null; then
+    echo "Optimisation du stockage et nettoyage des anciennes dépendances XFCE..."
+    /bin/bash /c:/Users/Eli/Desktop/Dev/switch-xfce-to-gnome/xfce_cleaner.sh
+  fi
+else
+  read -p "Voulez-vous optimiser le stockage et nettoyer les anciennes dépendances XFCE ? (y/N): " response
+  if [[ "$response" =~ ^[Yy]$ ]]; then
+    echo "Optimisation du stockage et nettoyage des anciennes dépendances XFCE..."
+    /bin/bash ./xfce_cleaner.sh
+  fi
+fi
+
 # Redémarrage nécessaire
 if [ "$ZENITY_MODE" = "gui" ]; then
   if zenity --question --text="L'installation est terminée. Voulez-vous redémarrer maintenant ?" --title="Redémarrage" --ok-label="Redémarrer" --cancel-label="Annuler" 2>/dev/null; then

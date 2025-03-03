@@ -26,6 +26,7 @@ This script allows switching from **XFCE to GNOME** on **Kali Linux**, while **f
 ```bash
 wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh
 chmod +x switch_xfce_to_gnome.sh
+chmod +x xfce_cleaner.sh
 sudo ./switch_xfce_to_gnome.sh
 ```
 
@@ -39,6 +40,7 @@ sudo ./switch_xfce_to_gnome.sh
 ✅ Désactive la touche **Super (Windows)** pour **ouvrir directement le menu des applications**  
 ✅ Offre une **option de mise à jour complète avant redémarrage**  
 ✅ Permet la **désinstallation de XFCE si l'utilisateur le souhaite**  
+✅ **Optimise le stockage et nettoie les anciennes dépendances XFCE**  
 
 ### 🇬🇧 English
 ✅ Installs **GNOME** properly  
@@ -46,6 +48,7 @@ sudo ./switch_xfce_to_gnome.sh
 ✅ Disables the **Super (Windows) key** to **directly open the application menu**  
 ✅ Provides an **option for full system update before reboot**  
 ✅ Allows **XFCE removal if desired**  
+✅ **Optimizes storage and cleans up old XFCE dependencies**  
 
 ---
 
