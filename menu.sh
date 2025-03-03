@@ -29,7 +29,8 @@ while true; do
     echo "1) Basculer de XFCE à GNOME"
     echo "2) Configurer Kali Linux en français"
     echo "3) Optimiser le stockage et nettoyer les anciennes dépendances XFCE"
-    echo "4) Quitter"
+    echo "4) Activer et configurer SSH"
+    echo "5) Quitter"
     echo -n "Choisissez une option : "
     read -r option
 
@@ -47,6 +48,10 @@ while true; do
             /bin/bash ./xfce_cleaner.sh
             ;;
         4)
+        color_echo "1;32" "\nExécution du script pour activer et sécuriser SSH..."
+        /bin/bash ./ssh_setup.sh
+            ;;
+        5)
             color_echo "1;32" "\nQuitter le menu. Au revoir !"
             exit 0
             ;;
