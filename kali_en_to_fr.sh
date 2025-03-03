@@ -1,15 +1,12 @@
 #!/bin/bash
-# Script pour configurer Kali Linux entièrement en français
-# et désinstaller la langue anglaise.
+# Script pour configurer Kali Linux entièrement en français et désinstaller la langue anglaise.
 
-# Fonction d'affichage coloré
 function color_echo() {
     local color_code="$1"
     local message="$2"
     echo -e "\033[${color_code}m${message}\033[0m"
 }
 
-# Vérification des droits d'administration
 if [ "$EUID" -ne 0 ]; then
     color_echo "1;31" "Veuillez exécuter ce script en tant que root (sudo)."
     exit 1
@@ -17,13 +14,9 @@ fi
 
 color_echo "1;34" "\n=== Configuration complète de Kali Linux en français ===\n"
 
-# Vérification de l'espace disponible
-REQUIRED_SPACE_MB=600
-AVAILABLE_SPACE_MB=$(df /var/cache/apt/archives | tail -1 | awk '{print $4}')
-if (( AVAILABLE_SPACE_MB < REQUIRED_SPACE_MB * 1024 )); then
-    color_echo "1;31" "Pas assez d'espace disponible sur /var/cache/apt/archives. Veuillez libérer de l'espace et réessayer."
-    exit 1
-fi
+# Libération d'espace disque
+color_echo "1;33" "Nettoyage du cache APT..."
+apt autoremove -y && apt clean
 
 # Mise à jour des paquets
 color_echo "1;32" "\nMise à jour de la liste des paquets..."
@@ -39,9 +32,9 @@ sed -i 's/^# fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen
 update-locale LANG=fr_FR.UTF-8
 
-# Définition du clavier en français (AZERTY)
+# Configuration persistante du clavier en AZERTY
 color_echo "1;32" "\nConfiguration du clavier en français (AZERTY)..."
-setxkbmap fr
+localectl set-x11-keymap fr
 echo 'XKBLAYOUT="fr"' > /etc/default/keyboard
 dpkg-reconfigure -f noninteractive keyboard-configuration
 
@@ -49,16 +42,16 @@ dpkg-reconfigure -f noninteractive keyboard-configuration
 color_echo "1;32" "\nConfiguration du fuseau horaire..."
 timedatectl set-timezone Europe/Paris
 
-# Suppression de la langue anglaise
+# Suppression des paquets anglais obsolètes
 color_echo "1;33" "\nSuppression des paquets liés à la langue anglaise..."
 apt remove -y manpages-en aspell-en libreoffice-l10n-en
 
-# Suppression des locales anglaises
+# Désactivation des locales anglaises
 color_echo "1;33" "\nDésactivation des locales anglaises..."
 sed -i '/en_US.UTF-8 UTF-8/d' /etc/locale.gen
 locale-gen
 
-# Redémarrage du service de localisation
+# Redémarrage des services de localisation
 color_echo "1;32" "\nRedémarrage des services de localisation..."
 systemctl restart systemd-localed
 
