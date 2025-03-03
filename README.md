@@ -1,6 +1,6 @@
-![Switch XFCE to GNOME](banner.jpeg)
+![Kali Linux Scripts](banner.jpeg)
 
-# 🚀 Switch XFCE to GNOME | Basculer XFCE vers GNOME
+# 🚀 Kali Linux Scripts | Scripts pour Kali Linux
 
 [![GitHub stars](https://img.shields.io/github/stars/elig-45/switch-xfce-to-gnome?style=social)](https://github.com/elig-45/switch-xfce-to-gnome/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/elig-45/switch-xfce-to-gnome?style=social)](https://github.com/elig-45/switch-xfce-to-gnome/network/members)
@@ -13,15 +13,17 @@
 
 ### 🇫🇷 Français
 
-Ce script permet de basculer de **XFCE à GNOME** sous **Kali Linux** tout en **corrigeant les erreurs liées à VirtualBox, VMware et KVM**.
+Ce dépôt contient plusieurs scripts utiles pour **Kali Linux**, y compris des scripts pour basculer de **XFCE à GNOME** et pour **configurer Kali Linux en français**.
 
 ### 🇬🇧 English
 
-This script allows switching from **XFCE to GNOME** on **Kali Linux**, while **fixing issues related to VirtualBox, VMware, and KVM**.
+This repository contains several useful scripts for **Kali Linux**, including scripts to switch from **XFCE to GNOME** and to **configure Kali Linux in French**.
 
 ---
 
 ## 📥 Installation & Usage
+
+### Switch XFCE to GNOME
 
 ```bash
 wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh
@@ -30,25 +32,25 @@ chmod +x xfce_cleaner.sh
 sudo ./switch_xfce_to_gnome.sh
 ```
 
+### Configure Kali Linux in French
+
+```bash
+wget https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/kali_en_to_fr.sh
+chmod +x kali_en_to_fr.sh
+sudo ./kali_en_to_fr.sh
+```
+
 ---
 
 ## 🛠 Fonctionnalités | Features
 
 ### 🇫🇷 Français
-✅ Installe **GNOME** proprement  
-✅ Détecte automatiquement l'environnement **VirtualBox, VMware, KVM** et installe les outils nécessaires  
-✅ Désactive la touche **Super (Windows)** pour **ouvrir directement le menu des applications**  
-✅ Offre une **option de mise à jour complète avant redémarrage**  
-✅ Permet la **désinstallation de XFCE si l'utilisateur le souhaite**  
-✅ **Optimise le stockage et nettoie les anciennes dépendances XFCE**  
+✅ **Switch XFCE to GNOME** : Installe **GNOME** proprement, détecte automatiquement l'environnement **VirtualBox, VMware, KVM** et installe les outils nécessaires, désactive la touche **Super (Windows)** pour **ouvrir directement le menu des applications**, offre une **option de mise à jour complète avant redémarrage**, permet la **désinstallation de XFCE si l'utilisateur le souhaite**, et **optimise le stockage et nettoie les anciennes dépendances XFCE**.  
+✅ **Configure Kali Linux in French** : Configure Kali Linux entièrement en français, installe les paquets de langue française, configure les locales et le clavier en français, définit le fuseau horaire à **Europe/Paris**, et désinstalle la langue anglaise.
 
 ### 🇬🇧 English
-✅ Installs **GNOME** properly  
-✅ Automatically detects **VirtualBox, VMware, KVM** environments and installs required tools  
-✅ Disables the **Super (Windows) key** to **directly open the application menu**  
-✅ Provides an **option for full system update before reboot**  
-✅ Allows **XFCE removal if desired**  
-✅ **Optimizes storage and cleans up old XFCE dependencies**  
+✅ **Switch XFCE to GNOME** : Installs **GNOME** properly, automatically detects **VirtualBox, VMware, KVM** environments and installs required tools, disables the **Super (Windows) key** to **directly open the application menu**, provides an **option for full system update before reboot**, allows **XFCE removal if desired**, and **optimizes storage and cleans up old XFCE dependencies**.  
+✅ **Configure Kali Linux in French** : Configures Kali Linux entirely in French, installs French language packages, configures locales and keyboard to French, sets the timezone to **Europe/Paris**, and uninstalls the English language.
 
 ---
 
