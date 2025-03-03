@@ -48,8 +48,8 @@ while true; do
             /bin/bash ./xfce_cleaner.sh
             ;;
         4)
-        color_echo "1;32" "\nExécution du script pour activer et sécuriser SSH..."
-        /bin/bash ./ssh_setup.sh
+            color_echo "1;32" "\nExécution du script pour activer et sécuriser SSH..."
+            /bin/bash ./ssh_setup.sh
             ;;
         5)
             color_echo "1;32" "\nQuitter le menu. Au revoir !"
