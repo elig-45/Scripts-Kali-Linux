@@ -14,6 +14,13 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
+# Télécharger et donner les permissions d'exécution aux scripts
+color_echo "1;34" "\nTéléchargement des scripts et attribution des permissions d'exécution..."
+wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh -O switch_xfce_to_gnome.sh
+wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/kali_en_to_fr.sh -O kali_en_to_fr.sh
+wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/xfce_cleaner.sh -O xfce_cleaner.sh
+chmod +x switch_xfce_to_gnome.sh kali_en_to_fr.sh xfce_cleaner.sh
+
 # Affichage du menu principal
 while true; do
     clear
@@ -28,15 +35,15 @@ while true; do
     case $option in
         1)
             color_echo "1;32" "\nExécution du script pour basculer de XFCE à GNOME..."
-            /bin/bash /C:/Users/Eli/Desktop/Dev/switch-xfce-to-gnome/switch_xfce_to_gnome.sh
+            /bin/bash ./switch_xfce_to_gnome.sh
             ;;
         2)
             color_echo "1;32" "\nExécution du script pour configurer Kali Linux en français..."
-            /bin/bash /C:/Users/Eli/Desktop/Dev/switch-xfce-to-gnome/kali_en_to_fr.sh
+            /bin/bash ./kali_en_to_fr.sh
             ;;
         3)
             color_echo "1;32" "\nExécution du script pour optimiser le stockage et nettoyer les anciennes dépendances XFCE..."
-            /bin/bash /C:/Users/Eli/Desktop/Dev/switch-xfce-to-gnome/xfce_cleaner.sh
+            /bin/bash ./xfce_cleaner.sh
             ;;
         4)
             color_echo "1;32" "\nQuitter le menu. Au revoir !"
