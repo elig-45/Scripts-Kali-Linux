@@ -16,15 +16,15 @@ color_echo "1;34" "\n=== Configuration complète de Kali Linux en français ===\
 
 # Libération d'espace disque
 color_echo "1;33" "Nettoyage du cache APT..."
-apt autoremove -y && apt clean
+apt autoremove -y > /dev/null && apt clean > /dev/null
 
 # Mise à jour des paquets
 color_echo "1;32" "\nMise à jour de la liste des paquets..."
-apt update -y && apt upgrade -y
+apt update -y > /dev/null && apt upgrade -y > /dev/null
 
 # Installation des paquets de langue française
 color_echo "1;32" "\nInstallation des paquets de langue française..."
-apt install -y locales-all manpages-fr aspell-fr libreoffice-l10n-fr
+apt install -y locales-all manpages-fr aspell-fr libreoffice-l10n-fr > /dev/null
 
 # Configuration des locales
 color_echo "1;32" "\nConfiguration des locales en français..."
@@ -44,7 +44,7 @@ timedatectl set-timezone Europe/Paris
 
 # Suppression des paquets anglais obsolètes
 color_echo "1;33" "\nSuppression des paquets liés à la langue anglaise..."
-apt remove -y manpages-en aspell-en libreoffice-l10n-en
+apt remove -y manpages-en aspell-en libreoffice-l10n-en > /dev/null
 
 # Désactivation des locales anglaises
 color_echo "1;33" "\nDésactivation des locales anglaises..."
