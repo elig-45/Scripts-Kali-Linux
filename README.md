@@ -13,11 +13,11 @@
 
 ### 🇫🇷 Français
 
-Ce dépôt contient plusieurs scripts utiles pour **Kali Linux**, y compris des scripts pour basculer de **XFCE à GNOME** et pour **configurer Kali Linux en français**. Le script principal `menu.sh` permet de choisir et d'exécuter ces scripts facilement.
+Ce dépôt contient plusieurs scripts utiles pour **Kali Linux**, y compris des scripts pour basculer de **XFCE à GNOME**, pour **configurer Kali Linux en français**, et pour **activer et sécuriser SSH**. Le script principal `menu.sh` permet de choisir et d'exécuter ces scripts facilement.
 
 ### 🇬🇧 English
 
-This repository contains several useful scripts for **Kali Linux**, including scripts to switch from **XFCE to GNOME** and to **configure Kali Linux in French**. The main script `menu.sh` allows you to choose and run these scripts easily.
+This repository contains several useful scripts for **Kali Linux**, including scripts to switch from **XFCE to GNOME**, to **configure Kali Linux in French**, and to **enable and secure SSH**. The main script `menu.sh` allows you to choose and run these scripts easily.
 
 ---
 
@@ -37,11 +37,13 @@ sudo ./menu.sh
 
 ### 🇫🇷 Français
 ✅ **Switch XFCE to GNOME** : Installe **GNOME** proprement, détecte automatiquement l'environnement **VirtualBox, VMware, KVM** et installe les outils nécessaires, désactive la touche **Super (Windows)** pour **ouvrir directement le menu des applications**, offre une **option de mise à jour complète avant redémarrage**, permet la **désinstallation de XFCE si l'utilisateur le souhaite**, et **optimise le stockage et nettoie les anciennes dépendances XFCE**.  
-✅ **Configure Kali Linux in French** : Configure Kali Linux entièrement en français, installe les paquets de langue française, configure les locales et le clavier en français, définit le fuseau horaire à **Europe/Paris**, et désinstalle la langue anglaise.
+✅ **Configure Kali Linux in French** : Configure Kali Linux entièrement en français, installe les paquets de langue française, configure les locales et le clavier en français, définit le fuseau horaire à **Europe/Paris**, et désinstalle la langue anglaise.  
+✅ **Activer et sécuriser SSH** : Installe le serveur SSH si nécessaire, permet de choisir le port SSH, désactive l'authentification par mot de passe, active l'authentification par clé publique, et sécurise la configuration SSH.
 
 ### 🇬🇧 English
 ✅ **Switch XFCE to GNOME** : Installs **GNOME** properly, automatically detects **VirtualBox, VMware, KVM** environments and installs required tools, disables the **Super (Windows) key** to **directly open the application menu**, provides an **option for full system update before reboot**, allows **XFCE removal if desired**, and **optimizes storage and cleans up old XFCE dependencies**.  
-✅ **Configure Kali Linux in French** : Configures Kali Linux entirely in French, installs French language packages, configures locales and keyboard to French, sets the timezone to **Europe/Paris**, and uninstalls the English language.
+✅ **Configure Kali Linux in French** : Configures Kali Linux entirely in French, installs French language packages, configures locales and keyboard to French, sets the timezone to **Europe/Paris**, and uninstalls the English language.  
+✅ **Enable and secure SSH** : Installs the SSH server if needed, allows choosing the SSH port, disables password authentication, enables public key authentication, and secures the SSH configuration.
 
 ---
 
