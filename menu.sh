@@ -19,7 +19,8 @@ color_echo "1;34" "\nTéléchargement des scripts et attribution des permissions
 wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/switch_xfce_to_gnome.sh -O switch_xfce_to_gnome.sh
 wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/kali_en_to_fr.sh -O kali_en_to_fr.sh
 wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/xfce_cleaner.sh -O xfce_cleaner.sh
-chmod +x switch_xfce_to_gnome.sh kali_en_to_fr.sh xfce_cleaner.sh
+wget -q https://raw.githubusercontent.com/elig-45/switch-xfce-to-gnome/main/ssh_setup.sh -O ssh_setup.sh
+chmod +x switch_xfce_to_gnome.sh kali_en_to_fr.sh xfce_cleaner.sh ssh_setup.sh
 
 # Affichage du menu principal
 while true; do
